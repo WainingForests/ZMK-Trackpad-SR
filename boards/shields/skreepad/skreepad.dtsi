@@ -116,9 +116,9 @@
         #address-cells = <1>;
         #size-cells = <0>;
 
-        trackpad_peripheral_split: trackpad_peripheral_split@0 {
+        trackpad_peripheral_split: trackpad_peripheral_split@74 {
             compatible = "zmk,input-split";
-            reg = <0>;
+            reg = <0x74>;
         };
     };
 };
