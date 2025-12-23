@@ -1,4 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "trackpad_config.dtsi"
 
 / {
     chosen {
@@ -88,21 +89,43 @@
         reset-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
         rdy-gpios = <&gpio0 29 GPIO_ACTIVE_HIGH>;
 
+        // Gesture features (configured in trackpad_config.dtsi)
+#ifdef TRACKPAD_ONE_FINGER_TAP
         one-finger-tap;
+#endif
+#ifdef TRACKPAD_TWO_FINGER_TAP
         two-finger-tap;
+#endif
+#ifdef TRACKPAD_PRESS_AND_HOLD
         press-and-hold;
-        press-and-hold-time = <250>;
-
+        press-and-hold-time = <TRACKPAD_PRESS_HOLD_TIME>;
+#endif
+#ifdef TRACKPAD_SCROLL
         scroll;
+#endif
+
+        // Scroll direction (configured in trackpad_config.dtsi)
+#ifdef TRACKPAD_NATURAL_SCROLL_Y
         natural-scroll-y;
+#endif
+#ifdef TRACKPAD_NATURAL_SCROLL_X
         natural-scroll-x;
+#endif
 
-        bottom-beta = <5>;
-        stationary-threshold = <5>;
+        // Sensitivity settings (configured in trackpad_config.dtsi)
+        bottom-beta = <TRACKPAD_BOTTOM_BETA>;
+        stationary-threshold = <TRACKPAD_STATIONARY_THRESHOLD>;
 
+        // Orientation (configured in trackpad_config.dtsi)
+#ifdef TRACKPAD_SWITCH_XY
         switch-xy;
+#endif
+#ifdef TRACKPAD_FLIP_X
         flip-x;
+#endif
+#ifdef TRACKPAD_FLIP_Y
         flip-y;
+#endif
     };
 };
 
