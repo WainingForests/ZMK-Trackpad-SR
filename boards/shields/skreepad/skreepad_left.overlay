@@ -1,4 +1,6 @@
 #include "skreepad.dtsi"
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
 &kscan0 {
     col-gpios
@@ -19,4 +21,15 @@
 
 &left_encoder_2 {
     status = "okay";
+};
+
+/ {
+    trackpad_listener: trackpad_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackpad>;
+
+        input-processors =
+            <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
+            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>;
+    };
 };
