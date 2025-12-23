@@ -61,9 +61,15 @@
         status = "disabled";
     };
 
-    trackpad_peripheral_split: trackpad_peripheral_split@0 {
-        compatible = "zmk,input-split";
-        reg = <0>;
-        status = "disabled";
+    split_inputs {
+        compatible = "zmk,split-inputs";
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackpad_peripheral_split: trackpad_peripheral_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+            status = "disabled";
+        };
     };
 };
