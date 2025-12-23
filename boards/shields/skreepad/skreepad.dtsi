@@ -60,7 +60,34 @@
         steps = <144>;
         status = "disabled";
     };
+};
 
+&i2c1 {
+    trackpad: trackpad@74 {
+        status = "disabled";
+        compatible = "azoteq,iqs5xx";
+        reg = <0x74>;
+        reset-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
+        rdy-gpios = <&gpio0 29 GPIO_ACTIVE_HIGH>;
+
+        one-finger-tap;
+        two-finger-tap;
+        press-and-hold;
+        press-and-hold-time = <250>;
+
+        scroll;
+        natural-scroll-y;
+        natural-scroll-x;
+
+        bottom-beta = <5>;
+        stationary-threshold = <5>;
+
+        switch-xy;
+        flip-y;
+    };
+};
+
+/ {
     split_inputs {
         #address-cells = <1>;
         #size-cells = <0>;
