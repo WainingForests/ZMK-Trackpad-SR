@@ -1,6 +1,4 @@
 name: zmk-trackpad-sr
 build:
-  cmake: .
-  kconfig: Kconfig
   settings:
     board_root: .
