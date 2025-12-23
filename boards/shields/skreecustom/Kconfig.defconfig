@@ -25,10 +25,13 @@ config SPI
 config I2C
     default y
 
+config INPUT
+    default y
+
 config ZMK_MOUSE
     default y
 
-config IQS5XX
+config INPUT_AZOTEQ_IQS5XX
     default y
 
 config ZMK_RGB_UNDERGLOW_EXT_POWER

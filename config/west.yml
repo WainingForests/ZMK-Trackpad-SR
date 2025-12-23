@@ -12,5 +12,6 @@ manifest:
     - name: zmk-driver-azoteq-iqs5xx
       remote: aym1607
       revision: main
+      import: true
   self:
     path: config

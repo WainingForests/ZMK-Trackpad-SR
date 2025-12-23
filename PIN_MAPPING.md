@@ -62,7 +62,10 @@ config PMW3610_REPORT_INTERVAL_MIN
 config I2C
     default y
 
-config IQS5XX
+config INPUT
+    default y
+
+config INPUT_AZOTEQ_IQS5XX
     default y
 ```
 

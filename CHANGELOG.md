@@ -43,7 +43,7 @@
 
 ##### Kconfig Updates
 - Removed: `PMW3610`, `PMW3610_SWAP_XY`, `PMW3610_REPORT_INTERVAL_MIN`
-- Added: `I2C`, `IQS5XX`
+- Added: `I2C`, `INPUT`, `INPUT_AZOTEQ_IQS5XX`
 
 ##### ZMK Version
 - Pinned to **v0.3** (required for TPS65 driver compatibility)
