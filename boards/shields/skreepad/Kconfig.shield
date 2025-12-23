@@ -1,2 +1,5 @@
-config SHIELD_SKREEPAD
-    def_bool $(shields_list_contains,skreepad)
+config SHIELD_SKREEPAD_LEFT
+    def_bool $(shields_list_contains,skreepad_left)
+
+config SHIELD_SKREEPAD_RIGHT
+    def_bool $(shields_list_contains,skreepad_right)

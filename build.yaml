@@ -19,5 +19,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: skreepad
-    cmake-args: -DCONFIG_ZMK_RGB_UNDERGLOW=n
+    shield: skreepad_left
+  - board: seeeduino_xiao_ble
+    shield: skreepad_right

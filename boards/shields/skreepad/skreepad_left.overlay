@@ -1,0 +1,29 @@
+#include "skreepad.dtsi"
+
+&kscan0 {
+    col-gpios
+        = <&shifter 0 GPIO_ACTIVE_HIGH>
+        , <&shifter 1 GPIO_ACTIVE_HIGH>
+        , <&shifter 2 GPIO_ACTIVE_HIGH>
+        , <&shifter 3 GPIO_ACTIVE_HIGH>
+        , <&shifter 4 GPIO_ACTIVE_HIGH>
+        , <&shifter 5 GPIO_ACTIVE_HIGH>
+        , <&shifter 6 GPIO_ACTIVE_HIGH>
+        , <&shifter 7 GPIO_ACTIVE_HIGH>
+        ;
+};
+
+&left_encoder {
+    status = "okay";
+};
+
+&left_encoder_2 {
+    status = "okay";
+};
+
+/ {
+    trackpad_listener: trackpad_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackpad>;
+    };
+};
