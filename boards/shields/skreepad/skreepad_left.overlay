@@ -31,5 +31,6 @@
 
     zip_xy_swap: zip_xy_swap {
         compatible = "zmk,input-processor-swap-xy";
+        #input-processor-cells = <0>;
     };
 };
