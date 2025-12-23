@@ -15,7 +15,4 @@ config INPUT
 config INPUT_AZOTEQ_IQS5XX
     default y
 
-config ZMK_RGB_UNDERGLOW
-    default n
-
 endif
