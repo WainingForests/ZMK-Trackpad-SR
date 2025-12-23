@@ -25,5 +25,11 @@
     trackpad_listener: trackpad_listener {
         compatible = "zmk,input-listener";
         device = <&trackpad>;
+
+        input-processors = <&zip_xy_swap>;
+    };
+
+    zip_xy_swap: zip_xy_swap {
+        compatible = "zmk,input-processor-swap-xy";
     };
 };
