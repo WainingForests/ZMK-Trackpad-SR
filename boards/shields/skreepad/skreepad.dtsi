@@ -101,7 +101,7 @@
         stationary-threshold = <5>;
 
         switch-xy;
-        flip-y;
+        flip-x;
     };
 };
 
