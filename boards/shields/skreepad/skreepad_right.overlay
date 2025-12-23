@@ -1,6 +1,4 @@
 #include "skreepad.dtsi"
-#include <input/processors.dtsi>
-#include <dt-bindings/zmk/input_transform.h>
 
 &default_transform {
     col-offset = <8>;
@@ -23,18 +21,17 @@
     status = "okay";
 };
 
-&trackpad_listener {
-    status = "okay";
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
-};
-
-&trackpad_peripheral_split {
+&trackpad {
     status = "okay";
 };
 
 / {
-    trackpad_peripheral_listener: trackpad_peripheral_listener {
+    trackpad_input: trackpad_input {
         compatible = "zmk,input-listener";
-        device = <&trackpad_peripheral_split>;
+        device = <&trackpad>;
     };
+};
+
+&trackpad_peripheral_split {
+    device = <&trackpad>;
 };

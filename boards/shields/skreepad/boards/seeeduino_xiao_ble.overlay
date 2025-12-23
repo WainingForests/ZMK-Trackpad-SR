@@ -89,7 +89,7 @@
     pinctrl-names = "default", "sleep";
 
     trackpad: trackpad@74 {
-        status = "okay";
+        status = "disabled";
         compatible = "azoteq,iqs5xx";
         reg = <0x74>;
         reset-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
@@ -106,6 +106,9 @@
 
         bottom-beta = <5>;
         stationary-threshold = <5>;
+
+        switch-xy;
+        flip-y;
     };
 };
 
