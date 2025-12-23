@@ -1,0 +1,53 @@
+#include "skreecustom.dtsi"
+
+&left_encoder {
+	status = "okay";
+};
+
+&left_encoder_2 {
+	status = "okay";
+};
+
+&kscan0 {
+    col-gpios
+        = <&shifter 0 GPIO_ACTIVE_HIGH>
+        , <&shifter 1 GPIO_ACTIVE_HIGH>
+        , <&shifter 2 GPIO_ACTIVE_HIGH>
+        , <&shifter 3 GPIO_ACTIVE_HIGH>
+        , <&shifter 4 GPIO_ACTIVE_HIGH>
+        , <&shifter 5 GPIO_ACTIVE_HIGH>
+        , <&shifter 6 GPIO_ACTIVE_HIGH>
+        , <&shifter 7 GPIO_ACTIVE_HIGH>
+        ;
+};
+
+
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+&i2c1 {
+    trackpad_central: trackpad_central@74 {
+        status = "disabled";
+        compatible = "azoteq,iqs5xx";
+        reg = <0x74>;
+        reset-gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
+        rdy-gpios = <&gpio0 29 GPIO_ACTIVE_HIGH>;
+
+        // Gesture support
+        one-finger-tap;
+        two-finger-tap;
+        press-and-hold;
+        press-and-hold-time = <250>;
+
+        // Scroll support
+        scroll;
+        natural-scroll-y;
+        natural-scroll-x;
+
+        // Tuning parameters
+        bottom-beta = <5>;
+        stationary-threshold = <5>;
+
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
+    };
+};

@@ -1,0 +1,17 @@
+# Build artifacts
+build/
+.west/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Claude settings
+.claude/
