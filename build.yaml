@@ -22,3 +22,7 @@ include:
     shield: skreepad_left
   - board: seeeduino_xiao_ble
     shield: skreepad_right
+  - board: seeeduino_xiao_ble
+    shield: skreepad_left
+    snippet: usb-logging
+    artifact-name: skreepad_left_usb_logging
