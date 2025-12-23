@@ -30,11 +30,11 @@ Based on the same pins previously used by PMW3610:
 
 ## ZMK Version
 
-This repository is pinned to **ZMK v0.3** as the TPS65/IQS5xx driver has not been updated for newer versions.
+This repository uses **ZMK v0.3**. The zmk-driver-azoteq-iqs5xx was created August 9, 2025, targeting v0.3 (released August 1, 2025). ZMK main branch has breaking changes from Zephyr 4.1 update (December 2025) that break the driver.
 
 ## Building
 
-The firmware is built automatically via GitHub Actions when you push to this repository. The workflow file uses ZMK v0.3.
+The firmware is built automatically via GitHub Actions when you push to this repository. The workflow uses ZMK v0.3.
 
 To build locally:
 ```bash

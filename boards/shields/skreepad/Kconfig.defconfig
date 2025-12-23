@@ -1,0 +1,18 @@
+if SHIELD_SKREEPAD
+
+config ZMK_KEYBOARD_NAME
+    default "Skreepad"
+
+config ZMK_POINTING
+    default y
+
+config I2C
+    default y
+
+config INPUT
+    default y
+
+config INPUT_AZOTEQ_IQS5XX
+    default y
+
+endif

@@ -19,6 +19,4 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: skreecustom_left
-  - board: seeeduino_xiao_ble
-    shield: skreecustom_right
+    shield: skreepad

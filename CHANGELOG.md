@@ -46,7 +46,7 @@
 - Added: `I2C`, `INPUT`, `INPUT_AZOTEQ_IQS5XX`
 
 ##### ZMK Version
-- Pinned to **v0.3** (required for TPS65 driver compatibility)
+- Pinned to **v0.3** (zmk-driver-azoteq-iqs5xx created August 9, 2025 for v0.3; main has Zephyr 4.1 breaking changes)
 
 #### Driver Integration
 - Added `zmk-driver-azoteq-iqs5xx` module via `config/west.yml`
