@@ -106,6 +106,12 @@
 };
 
 / {
+    trackpad_input: trackpad_input {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&trackpad>;
+    };
+
     split_inputs {
         #address-cells = <1>;
         #size-cells = <0>;
