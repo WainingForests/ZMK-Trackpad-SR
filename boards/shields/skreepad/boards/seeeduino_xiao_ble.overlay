@@ -81,9 +81,6 @@
     };
 };
 
-#include <input/processors.dtsi>
-#include <dt-bindings/zmk/input_transform.h>
-
 &i2c1 {
     status = "okay";
     compatible = "nordic,nrf-twim";
@@ -109,8 +106,6 @@
 
         bottom-beta = <5>;
         stationary-threshold = <5>;
-
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
     };
 };
 
