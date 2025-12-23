@@ -28,9 +28,10 @@
         compatible = "zmk,input-listener";
         device = <&trackpad>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
-
-        input-split {
-            compatible = "zmk,input-split";
-        };
     };
+};
+
+&trackpad_peripheral_split {
+    status = "okay";
+    device = <&trackpad_peripheral_listener>;
 };
