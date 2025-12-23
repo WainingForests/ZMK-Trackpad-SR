@@ -1,5 +1,12 @@
 #include "skreecustom.dtsi"
 
+/ {
+    trackpad_central_listener: trackpad_central_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackpad_central>;
+    };
+};
+
 &left_encoder {
 	status = "okay";
 };

@@ -1,5 +1,12 @@
 #include "skreecustom.dtsi"
 
+/ {
+    trackpad_peripheral_listener: trackpad_peripheral_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackpad_peripheral>;
+    };
+};
+
 &right_encoder {
 	status = "okay";
 };
