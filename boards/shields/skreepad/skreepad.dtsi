@@ -1,5 +1,4 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <input/processors.dtsi>
 #include "trackpad_config.dtsi"
 
 / {
@@ -135,7 +134,6 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackpad>;
-        input-processors = <&zip_xy_scaler TRACKPAD_SPEED_NUMERATOR TRACKPAD_SPEED_DENOMINATOR>;
     };
 
     split_inputs {
