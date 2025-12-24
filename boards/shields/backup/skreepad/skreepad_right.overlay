@@ -1,5 +1,9 @@
 #include "skreepad.dtsi"
 
+&default_transform {
+    col-offset = <8>;
+};
+
 &kscan0 {
     col-gpios
         = <&shifter 0 GPIO_ACTIVE_HIGH>
@@ -13,11 +17,7 @@
         ;
 };
 
-&left_encoder {
-    status = "okay";
-};
-
-&left_encoder_2 {
+&right_encoder {
     status = "okay";
 };
 
@@ -25,18 +25,6 @@
     status = "okay";
 };
 
-&trackpad_input {
-    status = "okay";
-};
-
 &trackpad_peripheral_split {
     device = <&trackpad>;
-};
-
-/ {
-    trackpad_split_listener: trackpad_split_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackpad_peripheral_split>;
-        input-processors = <&zip_xy_scaler TRACKPAD_SPEED_NUMERATOR TRACKPAD_SPEED_DENOMINATOR>;
-    };
 };
