@@ -29,8 +29,8 @@
 
 // Speed multiplier: numerator / denominator
 // Examples: 2/1 = 2x speed, 3/2 = 1.5x speed, 1/1 = normal
-#define TRACKPAD_SPEED_NUMERATOR 2
-#define TRACKPAD_SPEED_DENOMINATOR 1
+#define TRACKPAD_SPEED_NUMERATOR 25
+#define TRACKPAD_SPEED_DENOMINATOR 10
 
 // Bottom beta: Palm rejection sensitivity (default: 5, range: 0-255)
 // Higher = more aggressive palm rejection
@@ -38,7 +38,7 @@
 
 // Stationary threshold: Movement threshold (default: 5, range: 0-255)
 // Higher = less sensitive to small movements
-#define TRACKPAD_STATIONARY_THRESHOLD 50
+#define TRACKPAD_STATIONARY_THRESHOLD 5
 
 // ============================================================================
 // SCROLL BEHAVIOR
