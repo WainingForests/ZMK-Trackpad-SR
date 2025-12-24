@@ -29,8 +29,8 @@
 
 // Speed multiplier: numerator / denominator
 // Examples: 2/1 = 2x speed, 3/2 = 1.5x speed, 1/1 = normal
-#define TRACKPAD_SPEED_NUMERATOR 25
-#define TRACKPAD_SPEED_DENOMINATOR 10
+#define TRACKPAD_SPEED_NUMERATOR 1
+#define TRACKPAD_SPEED_DENOMINATOR 1
 
 // Bottom beta: Palm rejection sensitivity (default: 5, range: 0-255)
 // Higher = more aggressive palm rejection
