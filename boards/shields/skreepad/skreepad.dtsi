@@ -63,10 +63,11 @@
     };
 };
 
-&spi0 {
+&spi2 {
+    compatible = "nordic,nrf-spim";
     status = "okay";
-    pinctrl-0 = <&spi0_default>;
-    pinctrl-1 = <&spi0_sleep>;
+    pinctrl-0 = <&spi2_default>;
+    pinctrl-1 = <&spi2_sleep>;
     pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio1 13 GPIO_ACTIVE_LOW>;
 
