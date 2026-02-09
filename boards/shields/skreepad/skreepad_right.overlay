@@ -1,5 +1,11 @@
 #include "skreepad.dtsi"
 
+/ {
+    chosen {
+        zephyr,display = &oled;
+    };
+};
+
 &default_transform {
     col-offset = <8>;
 };

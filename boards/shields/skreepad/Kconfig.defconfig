@@ -45,6 +45,15 @@ config ZMK_KSCAN_MATRIX_WAIT_BETWEEN_OUTPUTS
 
 endif
 
+if SHIELD_SKREEPAD_RIGHT
+
+config ZMK_DISPLAY
+    select LV_USE_CONT
+    select LV_USE_LABEL
+    select LV_FONT_MONTSERRAT_26
+
+endif # SHIELD_SKREEPAD_RIGHT
+
 config ZMK_RGB_UNDERGLOW
     default y
     imply WS2812_STRIP
