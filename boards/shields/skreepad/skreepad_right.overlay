@@ -31,6 +31,6 @@
     status = "okay";
 };
 
-&trackpad_peripheral_split {
-    device = <&trackpad>;
+&trackpad_input {
+    status = "okay";
 };

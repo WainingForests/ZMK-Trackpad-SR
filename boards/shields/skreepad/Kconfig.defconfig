@@ -1,10 +1,13 @@
-if SHIELD_SKREEPAD_LEFT
+if SHIELD_SKREEPAD_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "Skreepad"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
+
+config ZMK_DISPLAY
+    select LV_USE_LABEL
 
 endif
 
@@ -44,13 +47,6 @@ config ZMK_KSCAN_MATRIX_WAIT_BETWEEN_OUTPUTS
     default 1
 
 endif
-
-if SHIELD_SKREEPAD_RIGHT
-
-config ZMK_DISPLAY
-    select LV_USE_LABEL
-
-endif # SHIELD_SKREEPAD_RIGHT
 
 config ZMK_RGB_UNDERGLOW
     default y
