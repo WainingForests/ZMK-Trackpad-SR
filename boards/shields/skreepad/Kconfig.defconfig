@@ -46,8 +46,8 @@ config ZMK_KSCAN_MATRIX_WAIT_BEFORE_INPUTS
 config ZMK_KSCAN_MATRIX_WAIT_BETWEEN_OUTPUTS
     default 1
 
-endif
-
 config ZMK_RGB_UNDERGLOW
     default y
     imply WS2812_STRIP
+
+endif
