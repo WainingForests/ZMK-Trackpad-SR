@@ -1,0 +1,8 @@
+file_format: "1"
+id: screen_test_c
+name: Screen Test C
+type: shield
+url: https://github.com/WainingForests/ZMK-Trackpad-SR
+requires: [seeeduino_xiao_ble]
+features:
+  - keys

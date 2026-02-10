@@ -1,0 +1,21 @@
+if SHIELD_SCREEN_TEST_C
+
+config ZMK_KEYBOARD_NAME
+    default "Screen Test C"
+
+config SPI
+    default y
+
+config I2C
+    default y
+
+config ZMK_DISPLAY
+    select LV_USE_LABEL
+
+config ZMK_KSCAN_MATRIX_WAIT_BEFORE_INPUTS
+    default 0
+
+config ZMK_KSCAN_MATRIX_WAIT_BETWEEN_OUTPUTS
+    default 1
+
+endif
