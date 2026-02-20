@@ -29,13 +29,13 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6) 		        RC(4,7) RC(4,8
         wakeup-source;
         diode-direction = "col2row";
         row-gpios
-             = <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //r1-7 0.03 0.28 1.01 0.09 0.10 1.11 1.15thumbs
+             = <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //r1-7 1.15 0.28 1.01 0.09 0.10 1.11 1.07thumbs
             , <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
             , <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
             , <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
             , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
             , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-            , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
+            , <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
             ;
     };
 
