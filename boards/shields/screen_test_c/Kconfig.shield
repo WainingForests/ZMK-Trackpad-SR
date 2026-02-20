@@ -1,2 +1,0 @@
-config SHIELD_SCREEN_TEST_C
-    def_bool $(shields_list_contains,screen_test_c)

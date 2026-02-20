@@ -22,9 +22,3 @@ include:
     shield: skreepad_left
   - board: seeeduino_xiao_ble
     shield: skreepad_right
-  - board: seeeduino_xiao_ble
-    shield: screen_test
-  - board: seeeduino_xiao_ble
-    shield: screen_test_b
-  - board: seeeduino_xiao_ble
-    shield: screen_test_c

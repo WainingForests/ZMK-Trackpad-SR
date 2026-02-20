@@ -9,16 +9,7 @@
         , <&shifter 4 GPIO_ACTIVE_HIGH>
         , <&shifter 5 GPIO_ACTIVE_HIGH>
         , <&shifter 6 GPIO_ACTIVE_HIGH>
-        , <&shifter 7 GPIO_ACTIVE_HIGH>
         ;
-};
-
-&left_encoder {
-    status = "okay";
-};
-
-&left_encoder_2 {
-    status = "okay";
 };
 
 &trackpad {
