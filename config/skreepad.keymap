@@ -24,14 +24,14 @@
 
         function_layer {
             bindings = <
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q                         &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q                         &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q                  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q                         &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q                         &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  
-              &kp Q  &kp Q                                                                   &kp Q  &kp Q
-                            &kp Q  &kp Q  &kp Q                         &kp Q  &kp Q  &kp Q
-                            &kp Q  &kp Q  &kp Q                         &kp Q  &kp Q  &kp Q
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+                                &trans  &trans  &trans                      &trans  &trans  &trans
+                                &trans  &trans  &trans                      &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>, <&inc_dec_kp HOME END>, <&inc_dec_kp C_BRI_UP C_BRI_DN>;
@@ -39,14 +39,14 @@
 
         bluetooth_layer {
             bindings = <
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q                         &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q                         &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q                  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q                         &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q                         &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  
-              &kp Q  &kp Q                                                                   &kp Q  &kp Q
-                            &kp Q  &kp Q  &kp Q                         &kp Q  &kp Q  &kp Q
-                            &kp Q  &kp Q  &kp Q                         &kp Q  &kp Q  &kp Q
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+                                &trans  &trans  &trans                      &trans  &trans  &trans
+                                &trans  &trans  &trans                      &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>, <&inc_dec_kp C_RW C_FF>, <&inc_dec_kp C_VOL_UP C_VOL_DN>;
