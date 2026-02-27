@@ -43,14 +43,14 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6) 		        RC(4,7) RC(4,8
         compatible = "alps,ec11";
         a-gpios = <&gpio1 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <144>;
+        steps = <80>;
         status = "disabled";
     };
     
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&right_encoder>;
-        triggers-per-rotation = <6>;
+        triggers-per-rotation = <20>;
     };
 };
 
